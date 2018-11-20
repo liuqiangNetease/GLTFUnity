@@ -1,0 +1,255 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2",
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2",
+      "max": [
+        0.9966580867767334,
+        0.99594426155090332
+      ],
+      "min": [
+        0.0040557663887739182,
+        0.34716415405273438
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 36,
+      "type": "SCALAR",
+      "max": [
+        23.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "firstScene.bin",
+      "byteLength": 1380
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 288
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 288,
+      "byteLength": 288
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 384
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 960,
+      "byteLength": 192
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1152,
+      "byteLength": 192
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1344,
+      "byteLength": 36
+    }
+  ],
+  "cameras": [
+    {
+      "perspective": {
+        "aspectRatio": 1.093639612197876,
+        "yfov": 1.0471975803375244,
+        "zfar": 1000.1340942382813,
+        "znear": 0.30000001192092896
+      },
+      "type": "perspective",
+      "name": "Main Camera"
+    }
+  ],
+  "images": [
+    {
+      "uri": "Assets/StreamingAssets%201/BoomBox/glTF/BoomBox_normal.png",
+      "name": "BoomBox_normal"
+    },
+    {
+      "uri": "Assets/StreamingAssets%201/BoomBox/glTF/BoomBox_baseColor.png",
+      "name": "BoomBox_baseColor"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.056660898,
+          0.363020629,
+          0.9632353,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.58600002527236938,
+        "roughnessFactor": 0.52600002288818359
+      },
+      "normalTexture": {
+        "index": 0
+      },
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "name": "Standard (Specular setup)"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "Cube"
+    }
+  ],
+  "nodes": [
+    {
+      "camera": 0,
+      "translation": [
+        0.0,
+        1.0,
+        -10.0
+      ],
+      "name": "Main Camera"
+    },
+    {
+      "rotation": [
+        0.408217877,
+        0.234569684,
+        -0.109381631,
+        0.8754261
+      ],
+      "translation": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "name": "Directional Light"
+    },
+    {
+      "mesh": 0,
+      "name": "Cube"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2
+      ],
+      "name": "firstScene"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "BoomBox_normal"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "BoomBox_baseColor"
+    }
+  ]
+}

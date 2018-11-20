@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{07B9177B-501D-D6CD-95B1-5151596B90C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Cache\AnimationCacheData.cs" />
+     <Compile Include="Assets\Scripts\Cache\AssetCache.cs" />
+     <Compile Include="Assets\Scripts\Cache\BufferCacheData.cs" />
+     <Compile Include="Assets\Scripts\Cache\MaterialCacheData.cs" />
+     <Compile Include="Assets\Scripts\Cache\MeshCacheData.cs" />
+     <Compile Include="Assets\Scripts\Cache\RefCountedCacheData.cs" />
+     <Compile Include="Assets\Scripts\Cache\TextureCacheData.cs" />
+     <Compile Include="Assets\Scripts\Exceptions.cs" />
+     <Compile Include="Assets\Scripts\Extensions\SchemaExtensions.cs" />
+     <Compile Include="Assets\Scripts\GLTFComponent.cs" />
+     <Compile Include="Assets\Scripts\GLTFSceneExporter.cs" />
+     <Compile Include="Assets\Scripts\GLTFSceneImporter.cs" />
+     <Compile Include="Assets\Scripts\InstantiatedGLTFObject.cs" />
+     <Compile Include="Assets\Scripts\Loader\FileLoader.cs" />
+     <Compile Include="Assets\Scripts\Loader\ILoader.cs" />
+     <Compile Include="Assets\Scripts\Loader\StorageFolderLoader.cs" />
+     <Compile Include="Assets\Scripts\Loader\WebRequestLoader.cs" />
+     <Compile Include="Assets\Scripts\Tests\Integration\GLTFExporterIntegrationTest.cs" />
+     <Compile Include="Assets\Scripts\Tests\Integration\GLTFTestComponent.cs" />
+     <Compile Include="Assets\Scripts\UniformMaps\MetalRough2StandardMap.cs" />
+     <Compile Include="Assets\Scripts\UniformMaps\MetalRoughMap.cs" />
+     <Compile Include="Assets\Scripts\UniformMaps\SpecGloss2StandardMap.cs" />
+     <Compile Include="Assets\Scripts\UniformMaps\SpecGlossMap.cs" />
+     <Compile Include="Assets\Scripts\UniformMaps\StandardMap.cs" />
+     <Compile Include="Assets\Scripts\UniformMaps\UniformMap.cs" />
+     <Compile Include="Assets\Scripts\URIHelper.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Exceptions.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Extensions\ExtTextureTransformExtension.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Extensions\ExtTextureTransformExtensionFactory.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Extensions\GLTFJsonExtensions.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Extensions\KHR_materials_pbrSpecularGlossinessExtension.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Extensions\KHR_materials_pbrSpecularGlossinessExtensionFactory.cs" />
+     <Compile Include="Assets\ScriptsGLTF\GLTFHelpers.cs" />
+     <Compile Include="Assets\ScriptsGLTF\GLTFParser.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Math\Color.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Math\Matrix4x4.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Math\Quaternion.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Math\Vector2.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Math\Vector3.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Math\Vector4.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\Accessor.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\AccessorSparse.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\AccessorSparseIndices.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\AccessorSparseValues.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\AnimationChannel.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\AnimationChannelTarget.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\AnimationSampler.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\Asset.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\BufferView.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\CameraOrthographic.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\CameraPerspective.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFAnimation.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFBuffer.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFCamera.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFChildOfRootProperty.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFId.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFImage.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFMaterial.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFMesh.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFProperty.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFRoot.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFScene.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\GLTFTexture.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\IExtension.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\MaterialCommonConstant.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\MaterialNormalTextureInfo.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\MaterialOcclusionTextureInfo.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\MaterialPBRMetallicRoughness.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\MeshPrimitive.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\Node.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\Sampler.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\Skin.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Schema\TextureInfo.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Utilities\JsonReaderExtensions.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Utilities\StreamExtensions.cs" />
+     <Compile Include="Assets\ScriptsGLTF\Utilities\SubStream.cs" />
+     <None Include="Assets\Resources\NormalChannel.shader" />
+     <None Include="Assets\Resources\MetalGlossChannelSwap.shader" />
+     <None Include="Assets\Resources\README.txt" />
+     <None Include="Assets\Plugins\Newtonsoft.Json.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/liuqiang/Desktop/Netease_sdk/GLTF/GLTF/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

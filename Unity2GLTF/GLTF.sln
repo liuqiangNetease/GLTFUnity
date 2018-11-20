@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLTF", "Assembly-CSharp.csproj", "{07B9177B-501D-D6CD-95B1-5151596B90C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLTF", "Assembly-CSharp-Editor.csproj", "{FC954111-30E3-A6EB-3F60-BBDEA9A1D443}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07B9177B-501D-D6CD-95B1-5151596B90C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B9177B-501D-D6CD-95B1-5151596B90C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B9177B-501D-D6CD-95B1-5151596B90C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B9177B-501D-D6CD-95B1-5151596B90C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC954111-30E3-A6EB-3F60-BBDEA9A1D443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC954111-30E3-A6EB-3F60-BBDEA9A1D443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC954111-30E3-A6EB-3F60-BBDEA9A1D443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC954111-30E3-A6EB-3F60-BBDEA9A1D443}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
